@@ -33,7 +33,7 @@ JobConnect is a Laravel-based job portal web application that connects job seeke
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/jobconnect.git
+git clone https://github.com/SejalKanojiya7566/jobconnect.git
 
 Navigate to the project directory
 

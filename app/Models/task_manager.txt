@@ -1,0 +1,81 @@
+task_manager/
+│
+├── application/
+│   ├── controllers/
+│   │   ├── Auth.php              🔐 Login / Register / Logout
+│   │   └── Tasks.php             📝 Todo CRUD + Status + Filter
+│   │
+│   ├── models/
+│   │   ├── User_model.php        👤 User DB Logic
+│   │   └── Task_model.php        📋 Task DB Logic
+│   │
+│   ├── views/
+│   │   ├── layouts/
+│   │   │   ├── header.php        🧭 Navbar (Task Management)
+│   │   │   └── footer.php
+│   │   │
+│   │   ├── auth/
+│   │   │   ├── login.php         🔑 Login Page
+│   │   │   └── register.php      📝 Register Page
+│   │   │
+│   │   └── tasks/
+│   │       ├── index.php         📃 SAME UI (Add + Table + Tabs)
+│   │       └── edit.php          ✏️ Edit Task
+│   │
+│   ├── config/
+│   │   ├── database.php
+│   │   ├── config.php
+│   │   └── routes.php
+│   │
+│   └── helpers/
+│
+├── assets/
+│   ├── css/
+│   │   └── style.css             🎨 Extra styling (optional)
+│   │
+│   └── icons/                    🎯 FontAwesome / Bootstrap Icons
+│
+├── system/
+├── index.php
+└── .htaccess
+
+
+
+
+
+
+
+
+
+
+
+
+task_manager_db
+│
+├── users
+│   ├── id
+│   ├── name
+│   ├── email
+│   └── password
+│
+└── tasks
+    ├── id
+    ├── user_id
+    ├── title
+    ├── status
+    └── created_at
+
+
+Register
+  ↓
+Login
+  ↓
+Session Create
+  ↓
+Tasks Dashboard
+  ├── Add Task
+  ├── Edit Task
+  ├── Mark Complete
+  ├── Delete Task
+  └── Filter (All / Pending / Completed)
+
